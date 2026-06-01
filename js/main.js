@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // ─── Subtle parallax on hero name ────────────────────────
-// The big pink name moves slightly slower than scroll for depth.
 const heroNameBg = document.querySelector('.hero__name-bg');
 if (heroNameBg) {
   window.addEventListener('scroll', () => {
@@ -65,18 +64,6 @@ if (heroNameBg) {
     }
   }, { passive: true });
 }
-
-
-// ─── Research cards: dim siblings on hover ───────────────
-const rCards = document.querySelectorAll('.research-card:not(.research-card--featured)');
-rCards.forEach((card) => {
-  card.addEventListener('mouseenter', () => {
-    rCards.forEach((c) => { if (c !== card) c.style.opacity = '0.65'; });
-  });
-  card.addEventListener('mouseleave', () => {
-    rCards.forEach((c) => { c.style.opacity = ''; });
-  });
-});
 
 
 // ─── Active nav link highlight ───────────────────────────
@@ -89,7 +76,7 @@ const secObserver = new IntersectionObserver((entries) => {
       const id = entry.target.getAttribute('id');
       navAnchors.forEach((a) => a.style.color = '');
       const active = document.querySelector(`.nav__links a[href="#${id}"]`);
-      if (active) active.style.color = 'var(--ink)';
+      if (active) active.style.color = 'var(--blue-deep)';
     }
   });
 }, { threshold: 0.4 });
