@@ -19,6 +19,7 @@
     </button>
     <ul class="nav__links" id="navLinks">
       <li><a href="#about">About</a></li>
+      <li><a href="#profile">Profile</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#visual">Visual Work</a></li>
       <li><a href="#database">Projects</a></li>
@@ -26,9 +27,9 @@
     </ul>
   </nav>
 
-  <!-- ============================================================
+  <!-- ═══════════════════════════════════════════════════════
        HERO — dark charcoal envelope (image 1) + bubbly name (image 3)
-       ============================================================ -->
+       ═══════════════════════════════════════════════════════ -->
   <section class="hero" id="hero">
 
     <!-- Envelope diagonal crease lines -->
@@ -37,27 +38,25 @@
       <div class="env-crease env-crease--tr"></div>
     </div>
 
-    <!-- Top discipline label (image 1 top-left) -->
+    <!-- Top label -->
     <div class="hero__discipline">Graphic Design / Patent Law</div>
 
-    <!-- Parenthetical center label (image 1) -->
+    <!-- Center eyebrow -->
     <div class="hero__eyebrow-label">( Design — Portfolio )</div>
 
-    <!-- Great Vibes script title floating behind name (image 1) -->
+    <!-- Faint Great Vibes "Portfolio" script -->
     <div class="hero__script-title" aria-hidden="true">Portfolio</div>
 
-    <!-- Giant bubbly name — Stacey Wang style (image 3) -->
+    <!-- Giant bubbly name -->
     <div class="hero__name-bg" aria-hidden="true">
-      <!-- REPLACE: Your name split across two lines -->
       <span class="hero__name-line1">YOUR</span>
       <span class="hero__name-line2">NAME</span>
     </div>
 
-    <!-- B&W photo on top (image 3) -->
+    <!-- B&W photo -->
     <div class="hero__photo-wrap">
       <!--
-        REPLACE with: <img src="images/hero-photo.png" alt="Your Name" class="hero__photo" />
-        For best effect: B&W PNG, background removed (use remove.bg)
+        REPLACE: <img src="images/hero-photo.png" alt="Your Name" class="hero__photo" />
       -->
       <div class="hero__photo-placeholder">
         <div class="hero__photo-placeholder-inner">
@@ -67,99 +66,121 @@
       </div>
     </div>
 
-    <!-- Handwritten annotations (image 3) -->
+    <!-- Handwritten annotations -->
     <div class="hw hw--topleft">Hi. Since you're new here,</div>
     <div class="hw hw--topright">let me be ya tour guide ✦</div>
 
-    <!-- Corner labels (image 1) -->
+    <!-- Corner parenthetical labels -->
     <div class="hero__corner-label hero__corner-label--left">( Your Name )</div>
     <div class="hero__corner-label hero__corner-label--year">( 2025 )</div>
 
-    <!-- Bottom strip (image 1) -->
+    <!-- Bottom strip -->
     <div class="hero__strip">
-      <span class="hero__strip-left">@yourhandle</span>
-      <span class="hero__strip-center">✦</span>
-      <span class="hero__strip-right">youremail@wisc.edu</span>
+      <span>@yourhandle</span>
+      <span class="hero__strip-dot">✦</span>
+      <span>youremail@wisc.edu</span>
     </div>
 
   </section>
 
-  <!-- ============================================================
-       ABOUT — image 1 scrapbook style: lace, ribbon, script heading,
-       blue duotone photo, paper clip, faint watermark
-       ============================================================ -->
+  <!-- ═══════════════════════════════════════════════════════
+       ABOUT — image 1 scrapbook:
+       Blue-periwinkle background, white paper card floating,
+       lace doily, ribbon, script heading, centered bio, paper clip
+       ═══════════════════════════════════════════════════════ -->
   <section class="about section" id="about">
     <div class="section__label">§ 01</div>
 
-    <!-- Decorative blue ribbon strip (image 1 left side) -->
-    <div class="ribbon ribbon--left" aria-hidden="true"></div>
+    <!-- Blue ribbon strips (image 1) -->
+    <div class="ribbon ribbon--left"  aria-hidden="true"></div>
     <div class="ribbon ribbon--right" aria-hidden="true"></div>
 
-    <!-- Faint watermark text in background (image 1) -->
-    <div class="about__watermark" aria-hidden="true">Research Writing Design Patent Law Science</div>
+    <!-- White paper card floating on the blue background -->
+    <div class="about__card-wrap container">
+      <div class="about__card fade-in-up">
 
-    <div class="about__panels container">
+        <!-- Left side: watermark + script heading + bio text -->
+        <div class="about__card-text">
 
-      <!-- Left panel: bio text + small photo -->
-      <div class="about__panel about__panel--left fade-in-left">
-
-        <!-- Script "About me" heading (image 1) -->
-        <h2 class="about__script-heading">About me</h2>
-
-        <div class="about__bio-photo">
-          <!-- REPLACE: your photo -->
-          <div class="img-placeholder img-placeholder--sm img-placeholder--blue"><span>Photo</span></div>
-          <div class="hw hw--inline" style="font-size:0.82rem; transform:rotate(2deg); margin-top:0.5rem;">me, age 11 probably</div>
-        </div>
-
-        <div class="about__bio-text">
-          <p class="about__lead-small">tiny, curious, and low-key destined for the science + law world<br/>(though she didn't know it yet).</p>
-          <p class="about__body-small">By the time she hit college, she had read her first patent filing, started annotating FDA dockets for fun, and probably thought she was going to single-handedly reform sunscreen regulation.</p>
-          <div class="about__arrow-line">
-            <svg width="120" height="30" viewBox="0 0 120 30" fill="none"><path d="M5 15 Q60 5 110 15" stroke="#6b8cba" stroke-width="1.5" fill="none"/><path d="M105 10 L112 15 L105 20" stroke="#6b8cba" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+          <!-- Faint mirrored watermark text in background (image 1) -->
+          <div class="about__watermark" aria-hidden="true">
+            Capturing Influences · Research · Patent Law · Science · Design
           </div>
-          <p class="about__body-small"><strong>That's when it clicked: science without law is unregulated. Law without science is guesswork.</strong></p>
+
+          <!-- Great Vibes "About me" heading -->
+          <h2 class="about__script-heading">About me</h2>
+
+          <!-- Centered bio text -->
+          <div class="about__bio-centered">
+            <p>Hi, my name is Ivy but I go by <strong>Cheri</strong>. I am a Biology + Legal Studies student at UW–Madison.</p>
+            <p>I love studying topics that sit at the intersection of science, policy, and aesthetics — skincare regulation, biotech IP, and visual culture.</p>
+            <p>My goal is to understand the legal landscape behind beauty innovation — and to shape it.</p>
+            <p>I am adaptable, creative, and always up for a new challenge that blends storytelling, emotion, and unique aesthetics.</p>
+            <p>Thanks for checking out my portfolio, hope you enjoy it!</p>
+          </div>
+
+          <span class="about__sig">( Your Name )</span>
         </div>
-      </div>
 
-      <!-- Right panel: blue duotone photo with paper clip + lace (image 1) -->
-      <div class="about__panel about__panel--right fade-in-right">
-        <div class="about__collage">
+        <!-- Right side: blue duotone photo + paper clip + lace doily -->
+        <div class="about__card-photo">
 
-          <!-- Paper clip decoration -->
+          <!-- Lace doily behind photo (image 1) -->
+          <div class="lace-doily" aria-hidden="true">
+            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" stroke="white" stroke-opacity="0.5">
+                <circle cx="150" cy="150" r="140" stroke-width="0.8" stroke-dasharray="3 5"/>
+                <circle cx="150" cy="150" r="128" stroke-width="0.5" stroke-dasharray="2 4"/>
+                <circle cx="150" cy="150" r="115" stroke-width="1"   stroke-dasharray="5 6"/>
+                <circle cx="150" cy="150" r="100" stroke-width="0.5" stroke-dasharray="2 3"/>
+                <circle cx="150" cy="150" r="88"  stroke-width="0.8" stroke-dasharray="4 5"/>
+                <circle cx="150" cy="150" r="74"  stroke-width="0.5" stroke-dasharray="3 4"/>
+                <circle cx="150" cy="150" r="60"  stroke-width="0.8" stroke-dasharray="4 6"/>
+                <circle cx="150" cy="150" r="46"  stroke-width="0.5" stroke-dasharray="2 3"/>
+                <circle cx="150" cy="150" r="32"  stroke-width="0.8" stroke-dasharray="3 4"/>
+                <!-- Radial spokes -->
+                <line x1="150" y1="10" x2="150" y2="290" stroke-width="0.3" stroke-dasharray="1 12"/>
+                <line x1="10" y1="150" x2="290" y2="150" stroke-width="0.3" stroke-dasharray="1 12"/>
+                <line x1="50" y1="50" x2="250" y2="250" stroke-width="0.3" stroke-dasharray="1 10"/>
+                <line x1="250" y1="50" x2="50" y2="250" stroke-width="0.3" stroke-dasharray="1 10"/>
+                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(22.5 150 150)"/>
+                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(45 150 150)"/>
+                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(67.5 150 150)"/>
+                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(112.5 150 150)"/>
+                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(135 150 150)"/>
+                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(157.5 150 150)"/>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Paper clip -->
           <div class="paperclip" aria-hidden="true"></div>
 
-          <div class="about__collage-img about__collage-img--main">
-            <!-- REPLACE: your photo — will render with blue duotone via CSS filter on real img -->
-            <div class="img-placeholder img-placeholder--blue"><span>Photo of you</span></div>
+          <!-- Blue duotone photo -->
+          <div class="about__photo-frame">
+            <!-- REPLACE: <img src="images/about-photo.jpg" class="photo-duotone" alt="Your Name" /> -->
+            <div class="img-placeholder img-placeholder--blue img-placeholder--portrait"><span>Your Photo</span></div>
           </div>
 
-          <div class="about__collage-grid">
-            <div class="img-placeholder img-placeholder--blue-pale"><span>Lab / class</span></div>
-            <div class="img-placeholder img-placeholder--blue"><span>Seoul / travel</span></div>
-            <div class="img-placeholder img-placeholder--blue-pale"><span>Sketchbook</span></div>
-            <div class="img-placeholder img-placeholder--blue"><span>Campus</span></div>
-          </div>
-
-          <div class="hw hw--collage-caption">Seven years later, she's basically a pro at reading<br/>100-page FDA dockets and finding the one paragraph<br/>that matters. It's a gift. She's behind it.</div>
         </div>
 
-        <!-- Lace doily decoration (image 1) -->
-        <div class="lace-doily" aria-hidden="true"></div>
       </div>
     </div>
 
-    <!-- Full-width bio strip -->
-    <div class="about__strip container fade-in-up">
-      <div class="about__strip-photo">
-        <!-- REPLACE: a current photo of yourself -->
-        <div class="img-placeholder img-placeholder--portrait img-placeholder--blue"><span>Current photo</span></div>
-        <div class="hw hw--inline" style="font-size:0.75rem; margin-top:0.4rem;">@yourhandle</div>
-        <p class="about__strip-follow">
-          UW–Madison '27<br/><span class="about__strip-sub">Biology + Legal Studies</span>
-        </p>
+    <!-- Below card: two-column detail panels (small collage + strip) -->
+    <div class="about__lower container fade-in-up">
+
+      <div class="about__lower-collage">
+        <div class="about__collage-grid">
+          <div class="img-placeholder img-placeholder--blue-pale"><span>Lab / class</span></div>
+          <div class="img-placeholder img-placeholder--blue"><span>Seoul / travel</span></div>
+          <div class="img-placeholder img-placeholder--blue-pale"><span>Sketchbook</span></div>
+          <div class="img-placeholder img-placeholder--blue"><span>Campus</span></div>
+        </div>
+        <div class="hw hw--inline" style="font-size:0.85rem; margin-top:0.6rem; color:#6b8cba;">Seven years later, she's basically a pro at reading FDA dockets. It's a gift. She's behind it.</div>
       </div>
-      <div class="about__strip-text">
+
+      <div class="about__lower-bio">
         <p>I love <strong>patent law</strong> and enjoy studying topics that sit at the intersection of science, policy, and aesthetics — skincare regulation, biotech IP, and visual culture. I do:</p>
         <ul class="about__dolist">
           <li>✦ Research writing</li>
@@ -168,34 +189,138 @@
           <li>✦ Fashion sketching</li>
         </ul>
       </div>
-      <div class="about__strip-quote">
+
+      <div class="about__lower-quote">
         <p class="about__strip-bigquote">"it's not just<br/>regulation,<br/>it's the science<br/>behind beauty."</p>
         <p class="about__strip-quoteattr">— Your Name, probably</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PROFILE — image 1 open book: ID card left, script headings right
+       ═══════════════════════════════════════════════════════ -->
+  <section class="profile section" id="profile">
+    <div class="section__label">§ 02</div>
+    <div class="container">
+
+      <div class="profile__book fade-in-up">
+
+        <!-- Left page: ID card + stamp label -->
+        <div class="profile__page-left">
+
+          <div class="profile__id-card">
+            <!-- Paper clip on ID card -->
+            <div class="paperclip paperclip--sm" aria-hidden="true"></div>
+
+            <div class="profile__id-top">
+              <div class="profile__id-name-big">CHE<span>( ALITTL )</span></div>
+              <!-- REPLACE: passport photo -->
+              <div class="profile__id-photo">
+                <div class="img-placeholder img-placeholder--blue img-placeholder--portrait"><span>ID Photo</span></div>
+              </div>
+            </div>
+
+            <div class="profile__id-fields">
+              <div class="profile__id-row"><span>NAME</span><span>YOUR NAME</span></div>
+              <div class="profile__id-row"><span>ROLE</span><span>BIOLOGY + LEGAL STUDIES</span></div>
+              <div class="profile__id-sep">••••••••••••••••</div>
+              <div class="profile__id-row profile__id-row--sm"><span>STYLE EXPLORATION</span></div>
+              <div class="profile__id-row profile__id-row--sm"><span>RESEARCH WRITING</span></div>
+              <div class="profile__id-row profile__id-row--sm"><span>PATENT ANALYSIS</span></div>
+              <div class="profile__id-row profile__id-row--sm"><span>REGULATORY RESEARCH</span></div>
+              <div class="profile__id-row profile__id-row--sm"><span>FASHION DESIGN</span></div>
+              <div class="profile__id-row profile__id-row--sm"><span>GRAPHIC DESIGN</span></div>
+              <div class="profile__id-sep">••••••••••••••••</div>
+              <div class="profile__id-row"><span>SOFTWARE SKILLS</span><span></span></div>
+              <div class="profile__id-row profile__id-row--skill"><span>Adobe Illustrator</span><span>●●●●○</span></div>
+              <div class="profile__id-row profile__id-row--skill"><span>Adobe Photoshop</span><span>●●●○○</span></div>
+              <div class="profile__id-row profile__id-row--skill"><span>Procreate</span><span>●●●●●</span></div>
+              <div class="profile__id-row profile__id-row--skill"><span>MS Office</span><span>●●●●○</span></div>
+            </div>
+          </div>
+
+          <!-- Stamp / label card below (image 1) -->
+          <div class="profile__stamp-card">
+            <p class="profile__stamp-name">Your Name</p>
+            <div class="profile__stamp-fields">
+              <p><span>D.O.B.</span><span class="profile__stamp-dots">............</span><!-- REPLACE: your DOB --></p>
+              <p><span>Phone</span><span class="profile__stamp-dots">............</span><!-- REPLACE: your phone --></p>
+              <p><span>Email</span><span class="profile__stamp-dots">............</span>youremail@wisc.edu</p>
+              <p><span>LinkedIn</span><span class="profile__stamp-dots">...........</span>linkedin.com/in/yourhandle</p>
+            </div>
+            <p class="profile__stamp-note"><em>I hope my work leaves you satisfied — and full of ideas worth learning.</em></p>
+          </div>
+
+          <p class="profile__book-footer">THANK YOU FOR VIEWING · © 2025</p>
+        </div>
+
+        <!-- Right page: script headings + centered content (image 1) -->
+        <div class="profile__page-right">
+
+          <h3 class="profile__script-heading">Strengths <sup>(1)</sup></h3>
+          <div class="profile__page-text">
+            <p>Skilled in research writing &amp; regulatory analysis</p>
+            <p>Hard-working &amp; creative</p>
+            <p>Strong sense of layout, color</p>
+            <p>Extremely organized and detail-focused</p>
+          </div>
+
+          <h3 class="profile__script-heading">Software Skills <sup>(2)</sup></h3>
+          <div class="profile__page-text">
+            <p>Adobe Illustrator</p>
+            <p>Adobe Photoshop</p>
+            <p>Procreate</p>
+            <p>MS Office</p>
+          </div>
+
+          <h3 class="profile__script-heading">Education <sup>(3)</sup></h3>
+          <div class="profile__page-text">
+            <p class="profile__edu-label">BIOLOGY + LEGAL STUDIES (20XX — NOW)</p>
+            <p>UW–Madison</p>
+          </div>
+
+          <h3 class="profile__script-heading">Skills <sup>(4)</sup></h3>
+          <div class="profile__page-text">
+            <p>Research writing</p>
+            <p>Regulatory analysis</p>
+            <p>Patent tracking</p>
+            <p>Fashion sketching</p>
+            <p>Graphic design</p>
+          </div>
+
+          <h3 class="profile__script-heading">Activities <sup>(5)</sup></h3>
+          <div class="profile__page-text">
+            <p class="profile__edu-label">COMMUNITY PROJECT</p>
+            <p><!-- REPLACE: your community activity --><br/>Science outreach / design volunteering</p>
+          </div>
+
+          <p class="profile__page-num">2</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       RESEARCH — editorial magazine style (image 2): giant initial,
-       cropped heading, newspaper column feel
-       ============================================================ -->
+  <!-- ═══════════════════════════════════════════════════════
+       RESEARCH — editorial: giant initial, cropped heading, strip label
+       ═══════════════════════════════════════════════════════ -->
   <section class="research section" id="research">
-    <div class="section__label">§ 02</div>
+    <div class="section__label">§ 03</div>
     <div class="container">
 
-      <!-- Editorial header: giant cropped "R" + heading (image 2) -->
       <div class="research__editorial-header fade-in-up">
         <div class="research__giant-letter" aria-hidden="true">R</div>
         <div class="research__header-text">
           <h2 class="section__heading">esearch &amp;<br/><em>Writing</em></h2>
-          <p class="section__subhead">Articles, papers, and ongoing investigations<br/>into skincare science and regulatory policy.</p>
+          <p class="section__subhead">Articles, papers, and ongoing investigations into skincare science and regulatory policy.</p>
         </div>
       </div>
 
-      <!-- Editorial label (image 2 "CITY OF GLAMOUR" style) -->
       <div class="editorial-strip fade-in-up">
         <div class="editorial-strip__line"></div>
-        <span class="editorial-strip__label">Patent Law · Skincare Regulation · Biotech</span>
+        <span class="editorial-strip__label">Patent Law · Skincare Regulation · Biotech IP</span>
         <div class="editorial-strip__line"></div>
       </div>
 
@@ -204,9 +329,7 @@
         <article class="research-card fade-in-up" style="animation-delay:0.1s">
           <div class="research-card__tag">Regulatory Analysis</div>
           <h3 class="research-card__title">FDA vs. MFDS: A Regulatory Divide in Sunscreen Innovation</h3>
-          <p class="research-card__excerpt">
-            An examination of how the U.S. FDA's drug classification of sunscreens has stifled ingredient innovation compared to South Korea's more flexible cosmetic regulatory pathway under the MFDS.
-          </p>
+          <p class="research-card__excerpt">An examination of how the U.S. FDA's drug classification of sunscreens has stifled ingredient innovation compared to South Korea's more flexible cosmetic regulatory pathway under the MFDS.</p>
           <div class="research-card__meta"><span>2024</span><span>·</span><span>3,200 words</span></div>
           <a href="#" class="research-card__link">Read Paper →</a>
         </article>
@@ -214,9 +337,7 @@
         <article class="research-card fade-in-up" style="animation-delay:0.2s">
           <div class="research-card__tag">Patent Law</div>
           <h3 class="research-card__title">Patenting Beauty: IP Strategy in the Cosmetic Industry</h3>
-          <p class="research-card__excerpt">
-            How cosmetic companies navigate the narrow gap between patentable formulations and unprotectable trade secrets, with case studies from Korean and U.S. skincare brands.
-          </p>
+          <p class="research-card__excerpt">How cosmetic companies navigate the narrow gap between patentable formulations and unprotectable trade secrets, with case studies from Korean and U.S. skincare brands.</p>
           <div class="research-card__meta"><span>2024</span><span>·</span><span>In Progress</span></div>
           <a href="#" class="research-card__link">Read Paper →</a>
         </article>
@@ -224,9 +345,7 @@
         <article class="research-card fade-in-up" style="animation-delay:0.3s">
           <div class="research-card__tag">Comparative Policy</div>
           <h3 class="research-card__title">Why Is Korean Sunscreen Better? A Policy Answer</h3>
-          <p class="research-card__excerpt">
-            A policy-focused exploration of the UV filter approval backlog in the U.S. and what regulatory reform could mean for public health and the American sunscreen market.
-          </p>
+          <p class="research-card__excerpt">A policy-focused exploration of the UV filter approval backlog in the U.S. and what regulatory reform could mean for public health and the American sunscreen market.</p>
           <div class="research-card__meta"><span>2023</span><span>·</span><span>2,800 words</span></div>
           <a href="#" class="research-card__link">Read Paper →</a>
         </article>
@@ -234,9 +353,7 @@
         <article class="research-card research-card--featured fade-in-up" style="animation-delay:0.4s">
           <div class="research-card__tag research-card__tag--featured">Mini Research Paper — Featured</div>
           <h3 class="research-card__title">Ingredient Transparency and Consumer Rights in Cosmetic Regulation: A Cross-National Comparison</h3>
-          <p class="research-card__excerpt">
-            Compares ingredient disclosure requirements across the U.S., EU, South Korea, and Japan. Argues that transparency mandates are both a consumer rights issue and a driver of competitive innovation. Draws on case law, regulatory filings, and cosmetic patent databases.
-          </p>
+          <p class="research-card__excerpt">Compares ingredient disclosure requirements across the U.S., EU, South Korea, and Japan. Argues that transparency mandates are both a consumer rights issue and a driver of competitive innovation.</p>
           <div class="research-card__meta"><span>2024</span><span>·</span><span>6,500 words</span></div>
           <a href="#" class="research-card__link">Read Paper →</a>
         </article>
@@ -245,16 +362,15 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       VISUAL WORK — image 3 "skills & works" bubbly heading + polaroids
-       ============================================================ -->
+  <!-- ═══════════════════════════════════════════════════════
+       VISUAL WORK — image 3 "skills & works" + polaroids
+       ═══════════════════════════════════════════════════════ -->
   <section class="visual section" id="visual">
-    <div class="section__label">§ 03</div>
+    <div class="section__label">§ 04</div>
     <div class="container">
 
       <div class="visual__header fade-in-up">
         <div class="visual__header-text">
-          <!-- Bubbly "skills & works" heading (image 3) -->
           <h2 class="visual__big-heading">
             <span class="visual__heading-filled">skills</span><br/>
             <span class="visual__heading-amp">&amp;</span>
@@ -265,8 +381,6 @@
       </div>
 
       <div class="visual__layout">
-
-        <!-- Polaroid strip (image 3) -->
         <div class="visual__strip fade-in-left">
           <div class="visual-polaroid">
             <div class="img-placeholder img-placeholder--blue img-placeholder--tall2"><span>Fashion Sketch</span></div>
@@ -278,7 +392,6 @@
           </div>
         </div>
 
-        <!-- Grid of smaller items -->
         <div class="visual__grid-right fade-in-right">
           <div class="visual-item">
             <div class="img-placeholder img-placeholder--blue-pale"><span>Mood Board</span></div>
@@ -316,27 +429,22 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       DATABASE — editorial layout, clean
-       ============================================================ -->
+  <!-- ═══════════════════════════════════════════════════════
+       DATABASE
+       ═══════════════════════════════════════════════════════ -->
   <section class="database section" id="database">
-    <div class="section__label">§ 04</div>
+    <div class="section__label">§ 05</div>
     <div class="container">
       <div class="database__inner">
 
         <div class="database__intro fade-in-left">
           <h2 class="section__heading">Skincare Patent<br/><em>Database</em></h2>
-          <p class="database__lead">
-            An ongoing independent research project tracking active ingredient patents, regulatory approval timelines, and innovation trends across the U.S. and Korean skincare markets.
-          </p>
-          <p class="database__body">
-            I'm building a personal database of cosmetic ingredient patents filed with the USPTO and KIPO, cross-referenced against FDA and MFDS approval records. The goal is to identify where regulatory lag is slowing down innovation — and to understand what the legal landscape looks like for a future biotech patent attorney.
-          </p>
+          <p class="database__lead">An ongoing independent research project tracking active ingredient patents, regulatory approval timelines, and innovation trends across the U.S. and Korean skincare markets.</p>
+          <p class="database__body">I'm building a personal database of cosmetic ingredient patents filed with the USPTO and KIPO, cross-referenced against FDA and MFDS approval records. The goal is to identify where regulatory lag is slowing down innovation — and to understand what the legal landscape looks like for a future biotech patent attorney.</p>
           <div class="database__tags">
             <span class="tag tag--dark">USPTO</span>
             <span class="tag tag--dark">KIPO</span>
@@ -353,49 +461,15 @@
             <table class="data-table">
               <thead>
                 <tr>
-                  <th>Ingredient</th>
-                  <th>Patent Holder</th>
-                  <th>Filed</th>
-                  <th>U.S. Status</th>
-                  <th>KR Status</th>
+                  <th>Ingredient</th><th>Patent Holder</th><th>Filed</th><th>U.S. Status</th><th>KR Status</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Tinosorb M</td>
-                  <td>BASF SE</td>
-                  <td>2001</td>
-                  <td><span class="status status--pending">Pending (NDA)</span></td>
-                  <td><span class="status status--approved">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>Uvinul A Plus</td>
-                  <td>BASF SE</td>
-                  <td>1999</td>
-                  <td><span class="status status--pending">Not Approved</span></td>
-                  <td><span class="status status--approved">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>Niacinamide Complex</td>
-                  <td>Amorepacific</td>
-                  <td>2015</td>
-                  <td><span class="status status--approved">Approved</span></td>
-                  <td><span class="status status--approved">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>Bakuchiol Ester</td>
-                  <td>Sytheon Ltd.</td>
-                  <td>2018</td>
-                  <td><span class="status status--approved">Approved</span></td>
-                  <td><span class="status status--pending">In Review</span></td>
-                </tr>
-                <tr>
-                  <td>Mexoryl SX</td>
-                  <td>L'Oréal</td>
-                  <td>1993</td>
-                  <td><span class="status status--approved">Approved (2006)</span></td>
-                  <td><span class="status status--approved">Approved</span></td>
-                </tr>
+                <tr><td>Tinosorb M</td><td>BASF SE</td><td>2001</td><td><span class="status status--pending">Pending (NDA)</span></td><td><span class="status status--approved">Approved</span></td></tr>
+                <tr><td>Uvinul A Plus</td><td>BASF SE</td><td>1999</td><td><span class="status status--pending">Not Approved</span></td><td><span class="status status--approved">Approved</span></td></tr>
+                <tr><td>Niacinamide Complex</td><td>Amorepacific</td><td>2015</td><td><span class="status status--approved">Approved</span></td><td><span class="status status--approved">Approved</span></td></tr>
+                <tr><td>Bakuchiol Ester</td><td>Sytheon Ltd.</td><td>2018</td><td><span class="status status--approved">Approved</span></td><td><span class="status status--pending">In Review</span></td></tr>
+                <tr><td>Mexoryl SX</td><td>L'Oréal</td><td>1993</td><td><span class="status status--approved">Approved (2006)</span></td><td><span class="status status--approved">Approved</span></td></tr>
               </tbody>
             </table>
           </div>
@@ -406,26 +480,22 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       CONTACT — "and that's a wrap." (image 3) + envelope (image 1)
-       ============================================================ -->
+  <!-- ═══════════════════════════════════════════════════════
+       CONTACT — envelope + "and that's a wrap."
+       ═══════════════════════════════════════════════════════ -->
   <section class="contact section" id="contact">
-    <div class="section__label">§ 05</div>
+    <div class="section__label">§ 06</div>
     <div class="contact__inner container">
-
       <div class="contact__envelope fade-in-up">
         <div class="envelope__top">
-          <!-- Envelope flap decoration (image 1) -->
           <div class="envelope__flap-decor"></div>
           <div class="envelope__flap-lines" aria-hidden="true">
             <div class="flap-line flap-line--l"></div>
             <div class="flap-line flap-line--r"></div>
           </div>
           <p class="envelope__eyebrow">( GET IN TOUCH )</p>
-          <!-- "and that's a wrap." — image 3 style -->
           <h2 class="envelope__title">and<br/>that's<br/><em>a wrap.</em></h2>
         </div>
-
         <div class="envelope__body">
           <div class="envelope__note">
             <div class="lined-paper">
@@ -434,24 +504,19 @@
               <p class="envelope__sig">— Your Name</p>
             </div>
           </div>
-
           <div class="envelope__links">
             <a href="mailto:youremail@wisc.edu" class="contact-link">
-              <span class="contact-link__icon">✉</span>
-              <span>youremail@wisc.edu</span>
+              <span class="contact-link__icon">✉</span><span>youremail@wisc.edu</span>
             </a>
             <a href="https://linkedin.com/in/yourhandle" target="_blank" class="contact-link">
-              <span class="contact-link__icon">in</span>
-              <span>linkedin.com/in/yourhandle</span>
+              <span class="contact-link__icon">in</span><span>linkedin.com/in/yourhandle</span>
             </a>
             <a href="resume.pdf" target="_blank" class="contact-link contact-link--resume">
-              <span class="contact-link__icon">↓</span>
-              <span>Download Resume</span>
+              <span class="contact-link__icon">↓</span><span>Download Resume</span>
             </a>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
