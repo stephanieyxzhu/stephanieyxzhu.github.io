@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Anybody:ital,wght@1,900&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <!-- REPLACE: Your initials -->
+      <span>Y.N.</span>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#visual">Visual Work</a></li>
+      <li><a href="#database">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+
+    <!-- Handwritten annotations — scattered around the page -->
+    <div class="hw hw--topleft">Hi. Since you're new here,</div>
+    <div class="hw hw--topright">let me be ya tour guide ✦</div>
+    <div class="hw hw--label">This is</div>
+    <div class="hw hw--bottomleft">Graphic Design / Patent Law</div>
+    <div class="hw hw--bottomright">By Your Name</div>
+
+    <!-- Giant bubbly name — sits BEHIND the photo -->
+    <div class="hero__name-bg" aria-hidden="true">
+      <!-- REPLACE: Your first name on line 1, last name on line 2 -->
+      <span class="hero__name-line1">YOUR</span>
+      <span class="hero__name-line2">NAME</span>
+    </div>
+
+    <!-- Photo sits on top of the name -->
+    <div class="hero__photo-wrap">
+      <!--
+        REPLACE: Delete the placeholder div below and uncomment the img tag.
+        Make sure your photo has a transparent or white bg for best effect.
+        A B&W photo with bg removed (use remove.bg) looks amazing here.
+
+        <img src="images/hero-photo.png" alt="Your Name" class="hero__photo" />
+      -->
+      <div class="hero__photo-placeholder">
+        <div class="hero__photo-placeholder-inner">
+          <p>Your Photo</p>
+          <p class="hero__photo-tip">Remove background<br/>for best effect</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Small info strip at bottom like reference image -->
+    <div class="hero__strip">
+      <span class="hero__strip-left">Biology + Legal Studies / UW–Madison</span>
+      <span class="hero__strip-right">Patent Law · Skincare Regulation · Visual Design</span>
+    </div>
+
+  </section>
+
+  <!-- ============ ABOUT (mini scrapbook pages) ============ -->
+  <section class="about section" id="about">
+    <div class="section__label">§ 01</div>
+
+    <!-- Two-panel layout like reference image 1 bottom row -->
+    <div class="about__panels container">
+
+      <!-- Left panel: bio text + photo -->
+      <div class="about__panel about__panel--left fade-in-left">
+        <div class="about__bio-photo">
+          <!-- REPLACE: childhood or candid photo -->
+          <div class="img-placeholder img-placeholder--sm"><span>Childhood photo</span></div>
+          <div class="hw hw--inline" style="font-size:0.8rem; transform:rotate(2deg); margin-top:0.5rem; color:#c98b8b;">me, age 11 probably</div>
+        </div>
+
+        <div class="about__bio-text">
+          <!-- REPLACE: your bio -->
+          <p class="about__lead-small">tiny, curious, and low-key destined for the science + law world<br/>(though she didn't know it yet).</p>
+          <p class="about__body-small">By the time she hit college, she had read her first patent filing, started annotating FDA dockets for fun, and probably thought she was going to single-handedly reform sunscreen regulation.</p>
+          <div class="about__arrow-line">
+            <svg width="120" height="30" viewBox="0 0 120 30" fill="none"><path d="M5 15 Q60 5 110 15" stroke="#c98b8b" stroke-width="1.5" fill="none"/><path d="M105 10 L112 15 L105 20" stroke="#c98b8b" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <p class="about__body-small"><strong>That's when it clicked: science without law is unregulated. Law without science is guesswork.</strong></p>
+        </div>
+      </div>
+
+      <!-- Right panel: photo collage -->
+      <div class="about__panel about__panel--right fade-in-right">
+        <div class="about__collage">
+          <div class="about__collage-img about__collage-img--main">
+            <!-- REPLACE: your main about photo -->
+            <div class="img-placeholder img-placeholder--dark"><span>Photo of you</span></div>
+          </div>
+          <div class="about__collage-grid">
+            <div class="img-placeholder"><span>Lab / class</span></div>
+            <div class="img-placeholder img-placeholder--dark"><span>Seoul / travel</span></div>
+            <div class="img-placeholder"><span>Sketchbook</span></div>
+            <div class="img-placeholder img-placeholder--dark"><span>Campus</span></div>
+          </div>
+          <div class="hw hw--collage-caption" style="font-size:0.78rem;">Seven years later, she's basically a pro at reading<br/>100-page FDA dockets and finding the one paragraph<br/>that matters. It's a gift. She's behind it.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-width bio strip -->
+    <div class="about__strip container fade-in-up">
+      <div class="about__strip-photo">
+        <!-- REPLACE: a current photo of yourself -->
+        <div class="img-placeholder img-placeholder--portrait"><span>Current photo</span></div>
+        <div class="hw hw--inline" style="font-size:0.75rem; margin-top:0.4rem;">@yourhandle</div>
+        <p class="about__strip-follow">
+          <!-- REPLACE: a fun metric about you -->
+          UW–Madison '27<br/><span class="about__strip-sub">Biology + Legal Studies</span>
+        </p>
+      </div>
+      <div class="about__strip-text">
+        <!-- REPLACE: your personality/bio paragraph -->
+        <p>I love <strong>patent law</strong> and enjoy studying topics that sit at the intersection of science, policy, and aesthetics — skincare regulation, biotech IP, and visual culture. I do:</p>
+        <ul class="about__dolist">
+          <li>✦ Research writing</li>
+          <li>✦ Regulatory analysis</li>
+          <li>✦ Patent tracking</li>
+          <li>✦ Fashion sketching</li>
+        </ul>
+      </div>
+      <div class="about__strip-quote">
+        <!-- REPLACE: quote that resonates with you -->
+        <p class="about__strip-bigquote">"it's not just<br/>regulation,<br/>it's the science<br/>behind beauty."</p>
+        <!-- REPLACE: source of quote or your own words -->
+        <p class="about__strip-quoteattr">— Your Name, probably</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH / WRITING ============ -->
+  <section class="research section" id="research">
+    <div class="section__label">§ 02</div>
+    <div class="container">
+      <div class="section__header fade-in-up">
+        <h2 class="section__heading">Research &amp;<br/><em>Writing</em></h2>
+        <p class="section__subhead">Articles, papers, and ongoing investigations into skincare science and regulatory policy.</p>
+      </div>
+
+      <div class="research__grid">
+
+        <article class="research-card fade-in-up" style="animation-delay:0.1s">
+          <div class="research-card__tag">Regulatory Analysis</div>
+          <h3 class="research-card__title">FDA vs. MFDS: A Regulatory Divide in Sunscreen Innovation</h3>
+          <p class="research-card__excerpt">
+            <!-- REPLACE: your article summary -->
+            An examination of how the U.S. FDA's drug classification of sunscreens has stifled ingredient innovation compared to South Korea's more flexible cosmetic regulatory pathway under the MFDS.
+          </p>
+          <div class="research-card__meta"><span>2024</span><span>·</span><span>3,200 words</span></div>
+          <!-- REPLACE: link to your paper/PDF -->
+          <a href="#" class="research-card__link">Read Paper →</a>
+        </article>
+
+        <article class="research-card fade-in-up" style="animation-delay:0.2s">
+          <div class="research-card__tag">Patent Law</div>
+          <h3 class="research-card__title">Patenting Beauty: IP Strategy in the Cosmetic Industry</h3>
+          <p class="research-card__excerpt">
+            <!-- REPLACE: your article summary -->
+            How cosmetic companies navigate the narrow gap between patentable formulations and unprotectable trade secrets, with case studies from Korean and U.S. skincare brands.
+          </p>
+          <div class="research-card__meta"><span>2024</span><span>·</span><span>In Progress</span></div>
+          <a href="#" class="research-card__link">Read Paper →</a>
+        </article>
+
+        <article class="research-card fade-in-up" style="animation-delay:0.3s">
+          <div class="research-card__tag">Comparative Policy</div>
+          <h3 class="research-card__title">Why Is Korean Sunscreen Better? A Policy Answer</h3>
+          <p class="research-card__excerpt">
+            <!-- REPLACE: your article summary -->
+            A policy-focused exploration of the UV filter approval backlog in the U.S. and what regulatory reform could mean for public health and the American sunscreen market.
+          </p>
+          <div class="research-card__meta"><span>2023</span><span>·</span><span>2,800 words</span></div>
+          <a href="#" class="research-card__link">Read Paper →</a>
+        </article>
+
+        <article class="research-card research-card--featured fade-in-up" style="animation-delay:0.4s">
+          <div class="research-card__tag research-card__tag--featured">Mini Research Paper — Featured</div>
+          <h3 class="research-card__title">Ingredient Transparency and Consumer Rights in Cosmetic Regulation: A Cross-National Comparison</h3>
+          <p class="research-card__excerpt">
+            <!-- REPLACE: your article summary -->
+            Compares ingredient disclosure requirements across the U.S., EU, South Korea, and Japan. Argues that transparency mandates are both a consumer rights issue and a driver of competitive innovation. Draws on case law, regulatory filings, and cosmetic patent databases.
+          </p>
+          <div class="research-card__meta"><span>2024</span><span>·</span><span>6,500 words</span></div>
+          <a href="#" class="research-card__link">Read Paper →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS & VISUAL WORK (like reference panel 5) ============ -->
+  <section class="visual section" id="visual">
+    <div class="section__label">§ 03</div>
+    <div class="container">
+
+      <!-- Big bold heading like "skills & works" -->
+      <div class="visual__header fade-in-up">
+        <div class="visual__header-text">
+          <h2 class="visual__big-heading">fashion<br/>&amp; works</h2>
+        </div>
+        <p class="section__subhead visual__subhead">Sketches, mood boards, and visual storytelling projects.</p>
+      </div>
+
+      <!-- Photo strip + gallery mix -->
+      <div class="visual__layout">
+
+        <!-- Left: tall polaroid strip -->
+        <div class="visual__strip fade-in-left">
+          <div class="visual-polaroid">
+            <div class="img-placeholder img-placeholder--dark img-placeholder--tall2"><span>Fashion Sketch</span></div>
+            <p class="visual-polaroid__cap">Structural Silhouette Study, 2024</p>
+          </div>
+          <div class="visual-polaroid visual-polaroid--rotate">
+            <div class="img-placeholder img-placeholder--tall2"><span>Sketch Series</span></div>
+            <p class="visual-polaroid__cap">Drape Studies Vol. II, 2023</p>
+          </div>
+        </div>
+
+        <!-- Right: grid of smaller items -->
+        <div class="visual__grid-right fade-in-right">
+          <div class="visual-item">
+            <div class="img-placeholder"><span>Mood Board</span></div>
+            <div class="visual-item__info">
+              <p class="visual-item__title">K-Beauty Editorial Board</p>
+              <p class="visual-item__medium">Digital collage · 2024</p>
+            </div>
+          </div>
+          <div class="visual-item">
+            <div class="img-placeholder img-placeholder--dark"><span>Illustration</span></div>
+            <div class="visual-item__info">
+              <p class="visual-item__title">Ingredient Portrait Series</p>
+              <p class="visual-item__medium">Ink & watercolor · 2023</p>
+            </div>
+          </div>
+          <div class="visual-item visual-item--wide">
+            <div class="img-placeholder img-placeholder--dark"><span>Visual Essay / Photo Story</span></div>
+            <div class="visual-item__info">
+              <p class="visual-item__title">The Lab as Ritual: Visual Essay</p>
+              <p class="visual-item__medium">Photography + layout · 2024</p>
+            </div>
+          </div>
+          <div class="visual-item">
+            <div class="img-placeholder"><span>Mood Board 2</span></div>
+            <div class="visual-item__info">
+              <p class="visual-item__title">Regulatory Aesthetic Board</p>
+              <p class="visual-item__medium">Collage · 2024</p>
+            </div>
+          </div>
+          <div class="visual-item">
+            <div class="img-placeholder img-placeholder--dark"><span>Sketch</span></div>
+            <div class="visual-item__info">
+              <p class="visual-item__title">Drape Studies Vol. III</p>
+              <p class="visual-item__medium">Charcoal · 2024</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ DATABASE PROJECT ============ -->
+  <section class="database section" id="database">
+    <div class="section__label">§ 04</div>
+    <div class="container">
+      <div class="database__inner">
+
+        <div class="database__intro fade-in-left">
+          <h2 class="section__heading">Skincare Patent<br/><em>Database</em></h2>
+          <p class="database__lead">
+            An ongoing independent research project tracking active ingredient patents, regulatory approval timelines, and innovation trends across the U.S. and Korean skincare markets.
+          </p>
+          <p class="database__body">
+            <!-- REPLACE: your project description -->
+            I'm building a personal database of cosmetic ingredient patents filed with the USPTO and KIPO, cross-referenced against FDA and MFDS approval records. The goal is to identify where regulatory lag is slowing down innovation — and to understand what the legal landscape looks like for a future biotech patent attorney.
+          </p>
+          <div class="database__tags">
+            <span class="tag tag--dark">USPTO</span>
+            <span class="tag tag--dark">KIPO</span>
+            <span class="tag tag--dark">FDA</span>
+            <span class="tag tag--dark">MFDS</span>
+            <span class="tag tag--dark">Patent Trends</span>
+          </div>
+          <!-- REPLACE: link to your Notion/Airtable/Google Sheet -->
+          <a href="#" class="btn btn--filled">View Full Database →</a>
+        </div>
+
+        <div class="database__table-col fade-in-right">
+          <p class="database__table-label">Sample Entry — Skincare Patents Tracker</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Ingredient</th>
+                  <th>Patent Holder</th>
+                  <th>Filed</th>
+                  <th>U.S. Status</th>
+                  <th>KR Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- REPLACE: swap with your real data -->
+                <tr>
+                  <td>Tinosorb M</td>
+                  <td>BASF SE</td>
+                  <td>2001</td>
+                  <td><span class="status status--pending">Pending (NDA)</span></td>
+                  <td><span class="status status--approved">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>Uvinul A Plus</td>
+                  <td>BASF SE</td>
+                  <td>1999</td>
+                  <td><span class="status status--pending">Not Approved</span></td>
+                  <td><span class="status status--approved">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>Niacinamide Complex</td>
+                  <td>Amorepacific</td>
+                  <td>2015</td>
+                  <td><span class="status status--approved">Approved</span></td>
+                  <td><span class="status status--approved">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>Bakuchiol Ester</td>
+                  <td>Sytheon Ltd.</td>
+                  <td>2018</td>
+                  <td><span class="status status--approved">Approved</span></td>
+                  <td><span class="status status--pending">In Review</span></td>
+                </tr>
+                <tr>
+                  <td>Mexoryl SX</td>
+                  <td>L'Oréal</td>
+                  <td>1993</td>
+                  <td><span class="status status--approved">Approved (2006)</span></td>
+                  <td><span class="status status--approved">Approved</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="database__table-note">↑ Sample entries. Full database contains 60+ entries with source links.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT (envelope style from ref 2) ============ -->
+  <section class="contact section" id="contact">
+    <div class="section__label">§ 05</div>
+    <div class="contact__inner container">
+
+      <!-- Envelope-style wrapper -->
+      <div class="contact__envelope fade-in-up">
+        <div class="envelope__top">
+          <div class="envelope__flap-decor"></div>
+          <p class="envelope__eyebrow">( GET IN TOUCH )</p>
+          <h2 class="envelope__title">and<br/>that's<br/><em>a wrap.</em></h2>
+        </div>
+
+        <div class="envelope__body">
+          <!-- Lined paper note section -->
+          <div class="envelope__note">
+            <div class="lined-paper">
+              <!-- REPLACE: your closing note -->
+              <p>Thank you so much for taking the time to look through my portfolio. I always appreciate new opportunities to learn and grow.</p>
+              <p>If you're interested in working together, I'd love to chat.</p>
+              <!-- REPLACE: your name as signature -->
+              <p class="envelope__sig">— Your Name</p>
+            </div>
+          </div>
+
+          <!-- Contact links -->
+          <div class="envelope__links">
+            <!-- REPLACE: your real email -->
+            <a href="mailto:youremail@wisc.edu" class="contact-link">
+              <span class="contact-link__icon">✉</span>
+              <span>youremail@wisc.edu</span>
+            </a>
+            <!-- REPLACE: your LinkedIn handle -->
+            <a href="https://linkedin.com/in/yourhandle" target="_blank" class="contact-link">
+              <span class="contact-link__icon">in</span>
+              <span>linkedin.com/in/yourhandle</span>
+            </a>
+            <!-- REPLACE: link to your resume PDF -->
+            <a href="resume.pdf" target="_blank" class="contact-link contact-link--resume">
+              <span class="contact-link__icon">↓</span>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <!-- REPLACE: your name -->
+      <p class="footer__name">Your Name</p>
+      <p class="footer__copy">Biology + Legal Studies · UW–Madison · © 2024</p>
+      <p class="footer__made">Designed & coded with intention.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
