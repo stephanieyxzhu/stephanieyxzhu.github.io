@@ -28,32 +28,60 @@
   </nav>
 
   <!-- ═══════════════════════════════════════════════════════
-       HERO — dark charcoal envelope (image 1) + bubbly name (image 3)
+       HERO
        ═══════════════════════════════════════════════════════ -->
   <section class="hero" id="hero">
 
-    <!-- Envelope diagonal crease lines -->
     <div class="hero__envelope-bg" aria-hidden="true">
       <div class="env-crease env-crease--tl"></div>
       <div class="env-crease env-crease--tr"></div>
     </div>
 
-    <!-- Top label -->
+    <!-- Lace corner pieces (image 1 + cute) -->
+    <div class="hero__lace-corner hero__lace-corner--tl" aria-hidden="true">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g stroke="rgba(197,212,232,0.25)" stroke-width="0.8">
+          <path d="M0 120 Q60 60 120 0" stroke-dasharray="3 5"/>
+          <path d="M0 100 Q50 50 100 0" stroke-dasharray="2 4"/>
+          <path d="M0 80  Q40 40 80 0"  stroke-dasharray="3 6"/>
+          <path d="M0 60  Q30 30 60 0"  stroke-dasharray="2 4"/>
+          <circle cx="0"   cy="120" r="6"  stroke-dasharray="2 3"/>
+          <circle cx="20"  cy="100" r="4"  stroke-dasharray="2 3"/>
+          <circle cx="40"  cy="80"  r="3"  stroke-dasharray="1 3"/>
+          <circle cx="60"  cy="60"  r="4"  stroke-dasharray="2 3"/>
+          <circle cx="80"  cy="40"  r="3"  stroke-dasharray="1 3"/>
+          <circle cx="100" cy="20"  r="4"  stroke-dasharray="2 3"/>
+          <circle cx="120" cy="0"   r="6"  stroke-dasharray="2 3"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero__lace-corner hero__lace-corner--tr" aria-hidden="true">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g stroke="rgba(197,212,232,0.25)" stroke-width="0.8">
+          <path d="M120 120 Q60 60 0 0" stroke-dasharray="3 5"/>
+          <path d="M120 100 Q70 50 20 0" stroke-dasharray="2 4"/>
+          <path d="M120 80  Q80 40 40 0"  stroke-dasharray="3 6"/>
+          <path d="M120 60  Q90 30 60 0"  stroke-dasharray="2 4"/>
+          <circle cx="120" cy="120" r="6"  stroke-dasharray="2 3"/>
+          <circle cx="100" cy="100" r="4"  stroke-dasharray="2 3"/>
+          <circle cx="80"  cy="80"  r="3"  stroke-dasharray="1 3"/>
+          <circle cx="60"  cy="60"  r="4"  stroke-dasharray="2 3"/>
+          <circle cx="40"  cy="40"  r="3"  stroke-dasharray="1 3"/>
+          <circle cx="20"  cy="20"  r="4"  stroke-dasharray="2 3"/>
+          <circle cx="0"   cy="0"   r="6"  stroke-dasharray="2 3"/>
+        </g>
+      </svg>
+    </div>
+
     <div class="hero__discipline">Graphic Design / Patent Law</div>
-
-    <!-- Center eyebrow -->
     <div class="hero__eyebrow-label">( Design — Portfolio )</div>
-
-    <!-- Faint Great Vibes "Portfolio" script -->
     <div class="hero__script-title" aria-hidden="true">Portfolio</div>
 
-    <!-- Giant bubbly name -->
     <div class="hero__name-bg" aria-hidden="true">
       <span class="hero__name-line1">YOUR</span>
       <span class="hero__name-line2">NAME</span>
     </div>
 
-    <!-- B&W photo -->
     <div class="hero__photo-wrap">
       <!--
         REPLACE: <img src="images/hero-photo.png" alt="Your Name" class="hero__photo" />
@@ -66,51 +94,73 @@
       </div>
     </div>
 
-    <!-- Handwritten annotations -->
     <div class="hw hw--topleft">Hi. Since you're new here,</div>
     <div class="hw hw--topright">let me be ya tour guide ✦</div>
-
-    <!-- Corner parenthetical labels -->
     <div class="hero__corner-label hero__corner-label--left">( Your Name )</div>
     <div class="hero__corner-label hero__corner-label--year">( 2025 )</div>
 
-    <!-- Bottom strip -->
+    <!-- Lace scallop strip just above bottom bar -->
+    <div class="hero__lace-strip" aria-hidden="true"></div>
+
     <div class="hero__strip">
       <span>@yourhandle</span>
-      <span class="hero__strip-dot">✦</span>
+      <span class="hero__strip-dot">✿</span>
       <span>youremail@wisc.edu</span>
     </div>
 
   </section>
 
+  <!-- lace section divider -->
+  <div class="lace-divider" aria-hidden="true"><div class="lace-divider__inner"></div></div>
+
   <!-- ═══════════════════════════════════════════════════════
-       ABOUT — image 1 scrapbook:
-       Blue-periwinkle background, white paper card floating,
-       lace doily, ribbon, script heading, centered bio, paper clip
+       ABOUT
        ═══════════════════════════════════════════════════════ -->
   <section class="about section" id="about">
     <div class="section__label">§ 01</div>
 
-    <!-- Blue ribbon strips (image 1) -->
     <div class="ribbon ribbon--left"  aria-hidden="true"></div>
     <div class="ribbon ribbon--right" aria-hidden="true"></div>
 
-    <!-- White paper card floating on the blue background -->
+    <!-- Floating lace doily top-left of section -->
+    <div class="section-doily section-doily--tl" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g stroke="rgba(255,255,255,0.35)" stroke-width="0.7">
+          <circle cx="100" cy="100" r="95" stroke-dasharray="3 5"/>
+          <circle cx="100" cy="100" r="80" stroke-dasharray="2 4"/>
+          <circle cx="100" cy="100" r="65" stroke-dasharray="3 6"/>
+          <circle cx="100" cy="100" r="50" stroke-dasharray="2 3"/>
+          <circle cx="100" cy="100" r="35" stroke-dasharray="3 5"/>
+          <circle cx="100" cy="100" r="20" stroke-dasharray="2 4"/>
+          <line x1="100" y1="5"   x2="100" y2="195" stroke-dasharray="1 14" stroke-width="0.4"/>
+          <line x1="5"   y1="100" x2="195" y2="100" stroke-dasharray="1 14" stroke-width="0.4"/>
+          <line x1="30"  y1="30"  x2="170" y2="170" stroke-dasharray="1 12" stroke-width="0.4"/>
+          <line x1="170" y1="30"  x2="30"  y2="170" stroke-dasharray="1 12" stroke-width="0.4"/>
+          <line x1="100" y1="5"   x2="195" y2="100" stroke-dasharray="1 16" stroke-width="0.3" transform="rotate(22.5 100 100)"/>
+          <line x1="100" y1="5"   x2="195" y2="100" stroke-dasharray="1 16" stroke-width="0.3" transform="rotate(45 100 100)"/>
+          <line x1="100" y1="5"   x2="195" y2="100" stroke-dasharray="1 16" stroke-width="0.3" transform="rotate(112.5 100 100)"/>
+          <line x1="100" y1="5"   x2="195" y2="100" stroke-dasharray="1 16" stroke-width="0.3" transform="rotate(135 100 100)"/>
+          <circle cx="100" cy="5"  r="3" stroke-dasharray="1 2"/>
+          <circle cx="195" cy="100" r="3" stroke-dasharray="1 2"/>
+          <circle cx="100" cy="195" r="3" stroke-dasharray="1 2"/>
+          <circle cx="5"  cy="100" r="3" stroke-dasharray="1 2"/>
+        </g>
+      </svg>
+    </div>
+
     <div class="about__card-wrap container">
       <div class="about__card fade-in-up">
 
-        <!-- Left side: watermark + script heading + bio text -->
         <div class="about__card-text">
-
-          <!-- Faint mirrored watermark text in background (image 1) -->
           <div class="about__watermark" aria-hidden="true">
             Capturing Influences · Research · Patent Law · Science · Design
           </div>
 
-          <!-- Great Vibes "About me" heading -->
+          <!-- Cute Korean sparkle above heading -->
+          <p class="cute-sparkle">✦ ✧ ✦</p>
+
           <h2 class="about__script-heading">About me</h2>
 
-          <!-- Centered bio text -->
           <div class="about__bio-centered">
             <p>Hi, my name is Ivy but I go by <strong>Cheri</strong>. I am a Biology + Legal Studies student at UW–Madison.</p>
             <p>I love studying topics that sit at the intersection of science, policy, and aesthetics — skincare regulation, biotech IP, and visual culture.</p>
@@ -120,56 +170,59 @@
           </div>
 
           <span class="about__sig">( Your Name )</span>
+
+          <!-- Washi tape strip decoration (Korean cute) -->
+          <div class="washi-tape washi-tape--card" aria-hidden="true"></div>
         </div>
 
-        <!-- Right side: blue duotone photo + paper clip + lace doily -->
         <div class="about__card-photo">
-
-          <!-- Lace doily behind photo (image 1) -->
           <div class="lace-doily" aria-hidden="true">
-            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-              <g fill="none" stroke="white" stroke-opacity="0.5">
-                <circle cx="150" cy="150" r="140" stroke-width="0.8" stroke-dasharray="3 5"/>
+            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <g stroke="white" stroke-opacity="0.45">
+                <circle cx="150" cy="150" r="142" stroke-width="0.8" stroke-dasharray="3 5"/>
                 <circle cx="150" cy="150" r="128" stroke-width="0.5" stroke-dasharray="2 4"/>
-                <circle cx="150" cy="150" r="115" stroke-width="1"   stroke-dasharray="5 6"/>
+                <circle cx="150" cy="150" r="114" stroke-width="1"   stroke-dasharray="5 6"/>
                 <circle cx="150" cy="150" r="100" stroke-width="0.5" stroke-dasharray="2 3"/>
-                <circle cx="150" cy="150" r="88"  stroke-width="0.8" stroke-dasharray="4 5"/>
-                <circle cx="150" cy="150" r="74"  stroke-width="0.5" stroke-dasharray="3 4"/>
-                <circle cx="150" cy="150" r="60"  stroke-width="0.8" stroke-dasharray="4 6"/>
-                <circle cx="150" cy="150" r="46"  stroke-width="0.5" stroke-dasharray="2 3"/>
-                <circle cx="150" cy="150" r="32"  stroke-width="0.8" stroke-dasharray="3 4"/>
-                <!-- Radial spokes -->
-                <line x1="150" y1="10" x2="150" y2="290" stroke-width="0.3" stroke-dasharray="1 12"/>
-                <line x1="10" y1="150" x2="290" y2="150" stroke-width="0.3" stroke-dasharray="1 12"/>
-                <line x1="50" y1="50" x2="250" y2="250" stroke-width="0.3" stroke-dasharray="1 10"/>
-                <line x1="250" y1="50" x2="50" y2="250" stroke-width="0.3" stroke-dasharray="1 10"/>
-                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(22.5 150 150)"/>
-                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(45 150 150)"/>
-                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(67.5 150 150)"/>
-                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(112.5 150 150)"/>
-                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(135 150 150)"/>
-                <line x1="150" y1="10" x2="290" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(157.5 150 150)"/>
+                <circle cx="150" cy="150" r="86"  stroke-width="0.8" stroke-dasharray="4 5"/>
+                <circle cx="150" cy="150" r="72"  stroke-width="0.5" stroke-dasharray="3 4"/>
+                <circle cx="150" cy="150" r="58"  stroke-width="0.8" stroke-dasharray="4 6"/>
+                <circle cx="150" cy="150" r="44"  stroke-width="0.5" stroke-dasharray="2 3"/>
+                <circle cx="150" cy="150" r="30"  stroke-width="0.8" stroke-dasharray="3 4"/>
+                <circle cx="150" cy="150" r="16"  stroke-width="0.5" stroke-dasharray="2 3"/>
+                <line x1="150" y1="8"   x2="150" y2="292" stroke-width="0.3" stroke-dasharray="1 12"/>
+                <line x1="8"   y1="150" x2="292" y2="150" stroke-width="0.3" stroke-dasharray="1 12"/>
+                <line x1="48"  y1="48"  x2="252" y2="252" stroke-width="0.3" stroke-dasharray="1 10"/>
+                <line x1="252" y1="48"  x2="48"  y2="252" stroke-width="0.3" stroke-dasharray="1 10"/>
+                <line x1="150" y1="8" x2="292" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(22.5 150 150)"/>
+                <line x1="150" y1="8" x2="292" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(45 150 150)"/>
+                <line x1="150" y1="8" x2="292" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(67.5 150 150)"/>
+                <line x1="150" y1="8" x2="292" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(112.5 150 150)"/>
+                <line x1="150" y1="8" x2="292" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(135 150 150)"/>
+                <line x1="150" y1="8" x2="292" y2="150" stroke-width="0.2" stroke-dasharray="1 14" transform="rotate(157.5 150 150)"/>
+                <!-- Petal dots on outer ring -->
+                <circle cx="150" cy="8"   r="4" stroke-width="0.8" stroke-dasharray="1 2"/>
+                <circle cx="292" cy="150" r="4" stroke-width="0.8" stroke-dasharray="1 2"/>
+                <circle cx="150" cy="292" r="4" stroke-width="0.8" stroke-dasharray="1 2"/>
+                <circle cx="8"   cy="150" r="4" stroke-width="0.8" stroke-dasharray="1 2"/>
+                <circle cx="255" cy="48"  r="3" stroke-width="0.6" stroke-dasharray="1 2"/>
+                <circle cx="255" cy="252" r="3" stroke-width="0.6" stroke-dasharray="1 2"/>
+                <circle cx="45"  cy="48"  r="3" stroke-width="0.6" stroke-dasharray="1 2"/>
+                <circle cx="45"  cy="252" r="3" stroke-width="0.6" stroke-dasharray="1 2"/>
               </g>
             </svg>
           </div>
 
-          <!-- Paper clip -->
           <div class="paperclip" aria-hidden="true"></div>
-
-          <!-- Blue duotone photo -->
           <div class="about__photo-frame">
             <!-- REPLACE: <img src="images/about-photo.jpg" class="photo-duotone" alt="Your Name" /> -->
             <div class="img-placeholder img-placeholder--blue img-placeholder--portrait"><span>Your Photo</span></div>
           </div>
-
         </div>
 
       </div>
     </div>
 
-    <!-- Below card: two-column detail panels (small collage + strip) -->
     <div class="about__lower container fade-in-up">
-
       <div class="about__lower-collage">
         <div class="about__collage-grid">
           <div class="img-placeholder img-placeholder--blue-pale"><span>Lab / class</span></div>
@@ -177,51 +230,62 @@
           <div class="img-placeholder img-placeholder--blue-pale"><span>Sketchbook</span></div>
           <div class="img-placeholder img-placeholder--blue"><span>Campus</span></div>
         </div>
-        <div class="hw hw--inline" style="font-size:0.85rem; margin-top:0.6rem; color:#6b8cba;">Seven years later, she's basically a pro at reading FDA dockets. It's a gift. She's behind it.</div>
+        <div class="hw hw--inline" style="font-size:0.88rem; margin-top:0.7rem; color:rgba(255,255,255,0.75);">Seven years later, she's basically a pro at reading FDA dockets. It's a gift. She's behind it.</div>
       </div>
-
       <div class="about__lower-bio">
-        <p>I love <strong>patent law</strong> and enjoy studying topics that sit at the intersection of science, policy, and aesthetics — skincare regulation, biotech IP, and visual culture. I do:</p>
+        <p>I love <strong>patent law</strong> and enjoy studying topics at the intersection of science, policy, and aesthetics — skincare regulation, biotech IP, and visual culture.</p>
         <ul class="about__dolist">
-          <li>✦ Research writing</li>
-          <li>✦ Regulatory analysis</li>
-          <li>✦ Patent tracking</li>
-          <li>✦ Fashion sketching</li>
+          <li>✿ Research writing</li>
+          <li>✿ Regulatory analysis</li>
+          <li>✿ Patent tracking</li>
+          <li>✿ Fashion sketching</li>
         </ul>
       </div>
-
       <div class="about__lower-quote">
         <p class="about__strip-bigquote">"it's not just<br/>regulation,<br/>it's the science<br/>behind beauty."</p>
         <p class="about__strip-quoteattr">— Your Name, probably</p>
       </div>
-
     </div>
   </section>
 
+  <!-- lace section divider -->
+  <div class="lace-divider" aria-hidden="true"><div class="lace-divider__inner"></div></div>
+
   <!-- ═══════════════════════════════════════════════════════
-       PROFILE — image 1 open book: ID card left, script headings right
+       PROFILE — open book
        ═══════════════════════════════════════════════════════ -->
   <section class="profile section" id="profile">
     <div class="section__label">§ 02</div>
-    <div class="container">
 
+    <!-- Lace corner on profile section -->
+    <div class="section-doily section-doily--br" aria-hidden="true">
+      <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g stroke="rgba(197,212,232,0.2)" stroke-width="0.7">
+          <circle cx="80" cy="80" r="75" stroke-dasharray="3 5"/>
+          <circle cx="80" cy="80" r="60" stroke-dasharray="2 4"/>
+          <circle cx="80" cy="80" r="45" stroke-dasharray="3 5"/>
+          <circle cx="80" cy="80" r="30" stroke-dasharray="2 3"/>
+          <circle cx="80" cy="80" r="15" stroke-dasharray="2 3"/>
+          <line x1="80" y1="5"  x2="80"  y2="155" stroke-width="0.3" stroke-dasharray="1 10"/>
+          <line x1="5"  y1="80" x2="155" y2="80"  stroke-width="0.3" stroke-dasharray="1 10"/>
+          <line x1="27" y1="27" x2="133" y2="133" stroke-width="0.3" stroke-dasharray="1 8"/>
+          <line x1="133" y1="27" x2="27" y2="133" stroke-width="0.3" stroke-dasharray="1 8"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="container">
       <div class="profile__book fade-in-up">
 
-        <!-- Left page: ID card + stamp label -->
         <div class="profile__page-left">
-
           <div class="profile__id-card">
-            <!-- Paper clip on ID card -->
             <div class="paperclip paperclip--sm" aria-hidden="true"></div>
-
             <div class="profile__id-top">
               <div class="profile__id-name-big">CHE<span>( ALITTL )</span></div>
-              <!-- REPLACE: passport photo -->
               <div class="profile__id-photo">
                 <div class="img-placeholder img-placeholder--blue img-placeholder--portrait"><span>ID Photo</span></div>
               </div>
             </div>
-
             <div class="profile__id-fields">
               <div class="profile__id-row"><span>NAME</span><span>YOUR NAME</span></div>
               <div class="profile__id-row"><span>ROLE</span><span>BIOLOGY + LEGAL STUDIES</span></div>
@@ -241,12 +305,10 @@
             </div>
           </div>
 
-          <!-- Stamp / label card below (image 1) -->
           <div class="profile__stamp-card">
             <p class="profile__stamp-name">Your Name</p>
             <div class="profile__stamp-fields">
-              <p><span>D.O.B.</span><span class="profile__stamp-dots">............</span><!-- REPLACE: your DOB --></p>
-              <p><span>Phone</span><span class="profile__stamp-dots">............</span><!-- REPLACE: your phone --></p>
+              <p><span>D.O.B.</span><span class="profile__stamp-dots">............</span></p>
               <p><span>Email</span><span class="profile__stamp-dots">............</span>youremail@wisc.edu</p>
               <p><span>LinkedIn</span><span class="profile__stamp-dots">...........</span>linkedin.com/in/yourhandle</p>
             </div>
@@ -256,8 +318,9 @@
           <p class="profile__book-footer">THANK YOU FOR VIEWING · © 2025</p>
         </div>
 
-        <!-- Right page: script headings + centered content (image 1) -->
         <div class="profile__page-right">
+          <!-- Lace dot pattern layer on right page -->
+          <div class="profile__page-lace" aria-hidden="true"></div>
 
           <h3 class="profile__script-heading">Strengths <sup>(1)</sup></h3>
           <div class="profile__page-text">
@@ -269,31 +332,27 @@
 
           <h3 class="profile__script-heading">Software Skills <sup>(2)</sup></h3>
           <div class="profile__page-text">
-            <p>Adobe Illustrator</p>
-            <p>Adobe Photoshop</p>
-            <p>Procreate</p>
-            <p>MS Office</p>
+            <p>Adobe Illustrator &nbsp;·&nbsp; Adobe Photoshop</p>
+            <p>Procreate &nbsp;·&nbsp; MS Office</p>
           </div>
 
           <h3 class="profile__script-heading">Education <sup>(3)</sup></h3>
           <div class="profile__page-text">
-            <p class="profile__edu-label">BIOLOGY + LEGAL STUDIES (20XX — NOW)</p>
+            <p class="profile__edu-label">BIOLOGY + LEGAL STUDIES</p>
             <p>UW–Madison</p>
           </div>
 
           <h3 class="profile__script-heading">Skills <sup>(4)</sup></h3>
           <div class="profile__page-text">
-            <p>Research writing</p>
-            <p>Regulatory analysis</p>
-            <p>Patent tracking</p>
-            <p>Fashion sketching</p>
+            <p>Research writing &nbsp;·&nbsp; Regulatory analysis</p>
+            <p>Patent tracking &nbsp;·&nbsp; Fashion sketching</p>
             <p>Graphic design</p>
           </div>
 
           <h3 class="profile__script-heading">Activities <sup>(5)</sup></h3>
           <div class="profile__page-text">
             <p class="profile__edu-label">COMMUNITY PROJECT</p>
-            <p><!-- REPLACE: your community activity --><br/>Science outreach / design volunteering</p>
+            <p>Science outreach / design volunteering</p>
           </div>
 
           <p class="profile__page-num">2</p>
@@ -303,13 +362,16 @@
     </div>
   </section>
 
+  <!-- lace section divider -->
+  <div class="lace-divider" aria-hidden="true"><div class="lace-divider__inner"></div></div>
+
   <!-- ═══════════════════════════════════════════════════════
-       RESEARCH — editorial: giant initial, cropped heading, strip label
+       RESEARCH
        ═══════════════════════════════════════════════════════ -->
   <section class="research section" id="research">
     <div class="section__label">§ 03</div>
-    <div class="container">
 
+    <div class="container">
       <div class="research__editorial-header fade-in-up">
         <div class="research__giant-letter" aria-hidden="true">R</div>
         <div class="research__header-text">
@@ -320,7 +382,7 @@
 
       <div class="editorial-strip fade-in-up">
         <div class="editorial-strip__line"></div>
-        <span class="editorial-strip__label">Patent Law · Skincare Regulation · Biotech IP</span>
+        <span class="editorial-strip__label">✿ Patent Law · Skincare Regulation · Biotech IP ✿</span>
         <div class="editorial-strip__line"></div>
       </div>
 
@@ -362,8 +424,11 @@
     </div>
   </section>
 
+  <!-- lace section divider -->
+  <div class="lace-divider" aria-hidden="true"><div class="lace-divider__inner"></div></div>
+
   <!-- ═══════════════════════════════════════════════════════
-       VISUAL WORK — image 3 "skills & works" + polaroids
+       VISUAL WORK
        ═══════════════════════════════════════════════════════ -->
   <section class="visual section" id="visual">
     <div class="section__label">§ 04</div>
@@ -377,7 +442,11 @@
             <span class="visual__heading-outlined">works</span>
           </h2>
         </div>
-        <p class="section__subhead visual__subhead">Sketches, mood boards, and visual storytelling projects.</p>
+        <div class="visual__header-aside">
+          <p class="section__subhead visual__subhead">Sketches, mood boards, and visual storytelling projects.</p>
+          <!-- Cute Korean annotation -->
+          <p class="cute-annotation">such as.. ↓</p>
+        </div>
       </div>
 
       <div class="visual__layout">
@@ -433,6 +502,9 @@
     </div>
   </section>
 
+  <!-- lace section divider -->
+  <div class="lace-divider" aria-hidden="true"><div class="lace-divider__inner"></div></div>
+
   <!-- ═══════════════════════════════════════════════════════
        DATABASE
        ═══════════════════════════════════════════════════════ -->
@@ -460,9 +532,7 @@
           <div class="table-wrap">
             <table class="data-table">
               <thead>
-                <tr>
-                  <th>Ingredient</th><th>Patent Holder</th><th>Filed</th><th>U.S. Status</th><th>KR Status</th>
-                </tr>
+                <tr><th>Ingredient</th><th>Patent Holder</th><th>Filed</th><th>U.S. Status</th><th>KR Status</th></tr>
               </thead>
               <tbody>
                 <tr><td>Tinosorb M</td><td>BASF SE</td><td>2001</td><td><span class="status status--pending">Pending (NDA)</span></td><td><span class="status status--approved">Approved</span></td></tr>
@@ -480,8 +550,11 @@
     </div>
   </section>
 
+  <!-- lace section divider -->
+  <div class="lace-divider" aria-hidden="true"><div class="lace-divider__inner"></div></div>
+
   <!-- ═══════════════════════════════════════════════════════
-       CONTACT — envelope + "and that's a wrap."
+       CONTACT
        ═══════════════════════════════════════════════════════ -->
   <section class="contact section" id="contact">
     <div class="section__label">§ 06</div>
@@ -493,6 +566,32 @@
             <div class="flap-line flap-line--l"></div>
             <div class="flap-line flap-line--r"></div>
           </div>
+          <!-- Lace corners on envelope top -->
+          <div class="envelope__lace-tl" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <g stroke="rgba(197,212,232,0.2)" stroke-width="0.8">
+                <path d="M0 80 Q40 40 80 0" stroke-dasharray="3 4"/>
+                <path d="M0 60 Q30 30 60 0" stroke-dasharray="2 4"/>
+                <path d="M0 40 Q20 20 40 0" stroke-dasharray="2 3"/>
+                <circle cx="0"  cy="80" r="5" stroke-dasharray="1 2"/>
+                <circle cx="40" cy="40" r="3" stroke-dasharray="1 2"/>
+                <circle cx="80" cy="0"  r="5" stroke-dasharray="1 2"/>
+              </g>
+            </svg>
+          </div>
+          <div class="envelope__lace-tr" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <g stroke="rgba(197,212,232,0.2)" stroke-width="0.8">
+                <path d="M80 80 Q40 40 0 0" stroke-dasharray="3 4"/>
+                <path d="M80 60 Q50 30 20 0" stroke-dasharray="2 4"/>
+                <path d="M80 40 Q60 20 40 0" stroke-dasharray="2 3"/>
+                <circle cx="80" cy="80" r="5" stroke-dasharray="1 2"/>
+                <circle cx="40" cy="40" r="3" stroke-dasharray="1 2"/>
+                <circle cx="0"  cy="0"  r="5" stroke-dasharray="1 2"/>
+              </g>
+            </svg>
+          </div>
+
           <p class="envelope__eyebrow">( GET IN TOUCH )</p>
           <h2 class="envelope__title">and<br/>that's<br/><em>a wrap.</em></h2>
         </div>
@@ -516,6 +615,8 @@
             </a>
           </div>
         </div>
+        <!-- Lace bottom strip on envelope -->
+        <div class="envelope__lace-bottom" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -525,7 +626,7 @@
     <div class="footer__inner container">
       <p class="footer__name">Your Name</p>
       <p class="footer__copy">Biology + Legal Studies · UW–Madison · © 2025</p>
-      <p class="footer__made">Designed &amp; coded with intention.</p>
+      <p class="footer__made">Designed &amp; coded with intention &nbsp;✿</p>
     </div>
   </footer>
 
